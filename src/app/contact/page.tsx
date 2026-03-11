@@ -104,14 +104,6 @@ export default function ContactPage() {
                       +233 20 196 1648
                     </a>
                   </p>
-                  <p className="text-sm text-gray-600">
-                    <a
-                      href="tel:+233201961648"
-                      className="hover:text-asanti-green transition-colors"
-                    >
-                      +233 20 196 1648
-                    </a>
-                  </p>
                 </div>
               </div>
 
@@ -167,10 +159,6 @@ export default function ContactPage() {
                   <p className="text-sm text-gray-600 mt-1">
                     Monday - Friday: 8:00 AM - 5:00 PM
                   </p>
-                  <p className="text-sm text-gray-600">
-                    Saturday: 9:00 AM - 1:00 PM
-                  </p>
-                  <p className="text-sm text-gray-500">Sunday: Closed</p>
                 </div>
               </div>
 
