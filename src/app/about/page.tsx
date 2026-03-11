@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import PageHeader from "@/components/PageHeader";
+import { InsurerLogoGrid } from "@/components/icons/InsurerLogos";
 
 export const metadata: Metadata = {
   title: "About Us",
@@ -209,16 +210,7 @@ export default function AboutPage() {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
-            {partners.map((name) => (
-              <div
-                key={name}
-                className="bg-gray-50 rounded-xl px-5 py-6 text-center border border-gray-100 hover:border-asanti-green/30 transition-colors"
-              >
-                <p className="text-sm font-semibold text-gray-700">{name}</p>
-              </div>
-            ))}
-          </div>
+          <InsurerLogoGrid />
         </div>
       </section>
 

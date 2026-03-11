@@ -8,7 +8,7 @@ import {
   FirePerilsIllustration,
   MarineIllustration,
 } from "@/components/illustrations/PolicyIllustrations";
-import insurerLogos from "@/components/icons/InsurerLogos";
+import { InsurerLogoGrid } from "@/components/icons/InsurerLogos";
 
 const policies = [
   {
@@ -293,16 +293,7 @@ export default function Home() {
               We compare quotes across these top-rated insurance companies
             </p>
           </div>
-          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
-            {insurerLogos.map(({ name, Component }) => (
-              <div
-                key={name}
-                className="bg-white rounded-xl px-4 py-5 flex items-center justify-center border border-gray-100 hover:border-asanti-green/30 hover:shadow-sm transition-all"
-              >
-                <Component className="h-10 w-auto" />
-              </div>
-            ))}
-          </div>
+          <InsurerLogoGrid />
         </div>
       </section>
 
