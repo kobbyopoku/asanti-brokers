@@ -18,7 +18,7 @@ export default function WhatsAppButton() {
       </span>
 
       <a
-        href="https://wa.me/233277426580?text=Hi%20Asanti%20Brokers%2C%20I%20need%20help%20with%20insurance."
+        href="https://wa.me/233201961648?text=Hi%20Asanti%20Brokers%2C%20I%20need%20help%20with%20insurance."
         target="_blank"
         rel="noopener noreferrer"
         aria-label="Chat with us on WhatsApp"

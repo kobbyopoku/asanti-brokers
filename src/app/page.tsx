@@ -328,10 +328,10 @@ export default function Home() {
               Request a Quote
             </Link>
             <a
-              href="tel:+233277426580"
+              href="tel:+233201961648"
               className="inline-flex items-center justify-center border-2 border-gray-200 hover:border-asanti-green text-gray-700 hover:text-asanti-green font-semibold px-10 py-4 rounded-full text-base transition-colors"
             >
-              Call 0277 426 580
+              Call 0201 961 648
             </a>
           </div>
         </div>

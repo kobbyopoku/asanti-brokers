@@ -164,10 +164,10 @@ export default function FireSpecialPerilsPage() {
               Get a Free Quote
             </Link>
             <a
-              href="tel:+233277426580"
+              href="tel:+233201961648"
               className="inline-flex items-center justify-center border-2 border-white/20 hover:border-white/40 text-white font-semibold px-10 py-4 rounded-full text-base transition-colors"
             >
-              Call 0277 426 580
+              Call 0201 961 648
             </a>
           </div>
         </div>

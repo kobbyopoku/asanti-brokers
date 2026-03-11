@@ -223,7 +223,7 @@ export default function ClaimsPage() {
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
             <a
-              href="tel:+233277426580"
+              href="tel:+233201961648"
               className="inline-flex items-center justify-center bg-asanti-green hover:bg-asanti-green-dark text-white font-semibold px-8 py-4 rounded-full text-base transition-colors shadow-lg shadow-asanti-green/25 gap-2"
             >
               <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -232,7 +232,7 @@ export default function ClaimsPage() {
               Call Us Now
             </a>
             <a
-              href="https://wa.me/233277426580?text=Hello%2C%20I%20need%20to%20file%20an%20insurance%20claim."
+              href="https://wa.me/233201961648?text=Hello%2C%20I%20need%20to%20file%20an%20insurance%20claim."
               target="_blank"
               rel="noopener noreferrer"
               className="inline-flex items-center justify-center bg-white/10 hover:bg-white/20 text-white font-semibold px-8 py-4 rounded-full text-base transition-colors border border-white/20 gap-2"

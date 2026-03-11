@@ -98,18 +98,18 @@ export default function ContactPage() {
                   <p className="font-semibold text-gray-900">Phone</p>
                   <p className="text-sm text-gray-600 mt-1">
                     <a
-                      href="tel:+233277426580"
+                      href="tel:+233201961648"
                       className="hover:text-asanti-green transition-colors"
                     >
-                      +233 277 426 580
+                      +233 20 196 1648
                     </a>
                   </p>
                   <p className="text-sm text-gray-600">
                     <a
-                      href="tel:+233289538285"
+                      href="tel:+233201961648"
                       className="hover:text-asanti-green transition-colors"
                     >
-                      +233 289 538 285
+                      +233 20 196 1648
                     </a>
                   </p>
                 </div>
