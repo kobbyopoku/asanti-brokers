@@ -3,6 +3,8 @@ import { Inter } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
+import WhatsAppButton from "@/components/WhatsAppButton";
+import CookieConsent from "@/components/CookieConsent";
 import "./globals.css";
 
 const inter = Inter({
@@ -52,6 +54,8 @@ export default function RootLayout({
         <main className="min-h-screen">{children}</main>
         <Footer />
         <Analytics />
+        <WhatsAppButton />
+        <CookieConsent />
       </body>
     </html>
   );

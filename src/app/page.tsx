@@ -9,6 +9,8 @@ import {
   MarineIllustration,
 } from "@/components/illustrations/PolicyIllustrations";
 import { InsurerLogoGrid } from "@/components/icons/InsurerLogos";
+import AnimatedCounter from "@/components/AnimatedCounter";
+import Testimonials from "@/components/Testimonials";
 
 const policies = [
   {
@@ -111,17 +113,23 @@ export default function Home() {
 
               <div className="flex items-center gap-8 pt-4">
                 <div className="text-center">
-                  <p className="text-2xl font-bold text-asanti-green">1000+</p>
+                  <p className="text-2xl font-bold text-asanti-green">
+                    <AnimatedCounter value="1,000+" />
+                  </p>
                   <p className="text-xs text-gray-500">Happy Customers</p>
                 </div>
                 <div className="w-px h-10 bg-gray-200" />
                 <div className="text-center">
-                  <p className="text-2xl font-bold text-asanti-green">10+</p>
+                  <p className="text-2xl font-bold text-asanti-green">
+                    <AnimatedCounter value="10+" />
+                  </p>
                   <p className="text-xs text-gray-500">Insurance Partners</p>
                 </div>
                 <div className="w-px h-10 bg-gray-200" />
                 <div className="text-center">
-                  <p className="text-2xl font-bold text-asanti-green">5 min</p>
+                  <p className="text-2xl font-bold text-asanti-green">
+                    <AnimatedCounter value="5 min" />
+                  </p>
                   <p className="text-xs text-gray-500">To Get Covered</p>
                 </div>
               </div>
@@ -264,13 +272,15 @@ export default function Home() {
 
             <div className="grid grid-cols-2 gap-4">
               {[
-                { stat: "1000+", label: "Customers Served" },
+                { stat: "1,000+", label: "Customers Served" },
                 { stat: "10+", label: "Insurance Partners" },
                 { stat: "98%", label: "Claims Settled" },
                 { stat: "24h", label: "Response Time" },
               ].map((item) => (
                 <div key={item.label} className="bg-white/5 border border-white/10 rounded-2xl p-6 text-center">
-                  <p className="text-3xl font-bold text-asanti-green mb-1">{item.stat}</p>
+                  <p className="text-3xl font-bold text-asanti-green mb-1">
+                    <AnimatedCounter value={item.stat} />
+                  </p>
                   <p className="text-sm text-gray-400">{item.label}</p>
                 </div>
               ))}
@@ -278,6 +288,9 @@ export default function Home() {
           </div>
         </div>
       </section>
+
+      {/* Testimonials */}
+      <Testimonials />
 
       {/* Insurer Partners - with logos */}
       <section className="py-20 bg-gray-50">

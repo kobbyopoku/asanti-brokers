@@ -23,6 +23,7 @@ export const metadata: Metadata = {
 const services: {
   Illustration: ComponentType<{ className?: string }>;
   title: string;
+  slug: string;
   description: string;
   color: string;
   features: string[];
@@ -30,6 +31,7 @@ const services: {
   {
     Illustration: MotorIllustration,
     title: "Motor Insurance",
+    slug: "motor-insurance",
     color: "from-emerald-50 to-green-50",
     description:
       "Protect your vehicle with comprehensive or third-party motor insurance. We cover private cars, commercial vehicles, taxis, ride-hailing cars, trucks, motorbikes, and fleet vehicles.",
@@ -45,6 +47,7 @@ const services: {
   {
     Illustration: PropertyIllustration,
     title: "Property Insurance",
+    slug: "property-insurance",
     color: "from-amber-50 to-yellow-50",
     description:
       "Safeguard your home, office, or commercial property against fire, flooding, burglary, and natural disasters with tailored property insurance plans.",
@@ -60,6 +63,7 @@ const services: {
   {
     Illustration: BusinessIllustration,
     title: "Business & Liability Insurance",
+    slug: "business-liability-insurance",
     color: "from-teal-50 to-emerald-50",
     description:
       "Comprehensive business insurance to protect your enterprise from operational risks, employee claims, and third-party liabilities.",
@@ -75,6 +79,7 @@ const services: {
   {
     Illustration: TravelIllustration,
     title: "Travel Insurance",
+    slug: "travel-insurance",
     color: "from-sky-50 to-blue-50",
     description:
       "Travel with confidence. Our travel insurance covers medical emergencies, trip cancellation, lost luggage, and more — for both local and international trips.",
@@ -90,6 +95,7 @@ const services: {
   {
     Illustration: FirePerilsIllustration,
     title: "Fire & Special Perils",
+    slug: "fire-special-perils",
     color: "from-orange-50 to-red-50",
     description:
       "Protection against fire damage, lightning, explosions, and special perils like storms, floods, and earthquakes for both residential and commercial properties.",
@@ -105,6 +111,7 @@ const services: {
   {
     Illustration: MarineIllustration,
     title: "Marine & Cargo Insurance",
+    slug: "marine-cargo-insurance",
     color: "from-cyan-50 to-teal-50",
     description:
       "Protect your goods in transit — by sea, air, or road. Essential for importers, exporters, and trading companies operating in Ghana and across West Africa.",
@@ -120,6 +127,7 @@ const services: {
   {
     Illustration: AccidentIllustration,
     title: "Personal Accident Insurance",
+    slug: "personal-accident-insurance",
     color: "from-rose-50 to-pink-50",
     description:
       "Financial protection in case of accidental injury or death. Covers medical bills, disability, and loss of income resulting from accidents.",
@@ -135,6 +143,7 @@ const services: {
   {
     Illustration: GroupBenefitsIllustration,
     title: "Group & Employee Benefits",
+    slug: "group-employee-benefits",
     color: "from-indigo-50 to-purple-50",
     description:
       "Attract and retain talent with group insurance plans for your employees — including health, life, and personal accident cover.",
@@ -204,10 +213,10 @@ export default function ServicesPage() {
                   </div>
 
                   <Link
-                    href="/contact"
+                    href={`/services/${service.slug}`}
                     className="inline-flex items-center justify-center bg-asanti-green hover:bg-asanti-green-dark text-white font-semibold px-6 py-3 rounded-full text-sm transition-colors shadow-md shadow-asanti-green/20"
                   >
-                    Get a Quote
+                    Learn More
                     <svg className="ml-2 w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 8l4 4m0 0l-4 4m4-4H3" />
                     </svg>

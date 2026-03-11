@@ -193,6 +193,79 @@ export default function AboutPage() {
         </div>
       </section>
 
+      {/* Meet Our Team */}
+      <section className="py-20 lg:py-28 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center max-w-2xl mx-auto mb-16">
+            <p className="text-sm font-semibold text-asanti-green uppercase tracking-wider mb-3">
+              Our Team
+            </p>
+            <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
+              Meet Our Team
+            </h2>
+            <p className="text-gray-600">
+              A dedicated team of insurance professionals committed to finding
+              the best coverage for you.
+            </p>
+          </div>
+
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-8">
+            {[
+              {
+                name: "Mark Ofori Boateng",
+                initials: "MO",
+                role: "Managing Director",
+                bio: "With over 15 years in insurance and risk management, Mark leads Asanti Brokers with a vision to make insurance accessible to every Ghanaian.",
+                color: "bg-asanti-green",
+              },
+              {
+                name: "Sophia Mensah",
+                initials: "SM",
+                role: "Head of Operations",
+                bio: "Sophia ensures smooth day-to-day operations and oversees our claims management process, delivering exceptional service to every client.",
+                color: "bg-asanti-forest",
+              },
+              {
+                name: "Kwesi Appiah",
+                initials: "KA",
+                role: "Senior Insurance Advisor",
+                bio: "Kwesi specializes in commercial and business insurance, helping enterprises find the right coverage for their unique risks.",
+                color: "bg-asanti-green-dark",
+              },
+              {
+                name: "Ama Darko",
+                initials: "AD",
+                role: "Client Relations Manager",
+                bio: "Ama is the first point of contact for new clients, guiding them through the insurance selection process with care and expertise.",
+                color: "bg-asanti-green",
+              },
+            ].map((member) => (
+              <div
+                key={member.name}
+                className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 text-center"
+              >
+                <div
+                  className={`w-20 h-20 ${member.color} rounded-full flex items-center justify-center mx-auto mb-5`}
+                >
+                  <span className="text-white text-xl font-bold">
+                    {member.initials}
+                  </span>
+                </div>
+                <h3 className="text-lg font-bold text-gray-900 mb-1">
+                  {member.name}
+                </h3>
+                <p className="text-sm font-medium text-asanti-green mb-3">
+                  {member.role}
+                </p>
+                <p className="text-gray-600 text-sm leading-relaxed">
+                  {member.bio}
+                </p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Insurer Partners */}
       <section className="py-20 lg:py-28 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
