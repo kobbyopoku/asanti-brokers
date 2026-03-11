@@ -81,48 +81,14 @@ export default function AboutPage() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div className="relative">
-              <div className="bg-asanti-green-light rounded-3xl p-12 lg:p-16">
-                <div className="grid grid-cols-2 gap-6">
-                  <div className="bg-white rounded-2xl p-6 shadow-sm flex flex-col items-center text-center">
-                    <Image
-                      src="/handshake.png"
-                      alt="Partnership"
-                      width={48}
-                      height={48}
-                      className="mb-3"
-                    />
-                    <p className="text-sm font-semibold text-gray-800">
-                      Trusted Partners
-                    </p>
-                  </div>
-                  <div className="bg-white rounded-2xl p-6 shadow-sm flex flex-col items-center text-center">
-                    <Image
-                      src="/africa.png"
-                      alt="West Africa"
-                      width={48}
-                      height={48}
-                      className="mb-3"
-                    />
-                    <p className="text-sm font-semibold text-gray-800">
-                      West Africa
-                    </p>
-                  </div>
-                  <div className="bg-white rounded-2xl p-6 shadow-sm flex flex-col items-center text-center col-span-2">
-                    <Image
-                      src="/NIC_LOGO.png"
-                      alt="NIC Registered"
-                      width={64}
-                      height={64}
-                      className="mb-3"
-                    />
-                    <p className="text-sm font-semibold text-gray-800">
-                      NIC Registered
-                    </p>
-                    <p className="text-xs text-gray-500 mt-1">
-                      National Insurance Commission
-                    </p>
-                  </div>
-                </div>
+              <div className="rounded-3xl overflow-hidden shadow-lg">
+                <Image
+                  src="/mark.jpeg"
+                  alt="Mark Ofori Boateng — Managing Director"
+                  width={600}
+                  height={700}
+                  className="w-full h-auto object-cover"
+                />
               </div>
             </div>
 
@@ -151,6 +117,45 @@ export default function AboutPage() {
                 to purchasing a policy to filing a claim — so it can all be done
                 from the comfort of your phone.
               </p>
+
+              <div className="grid grid-cols-3 gap-4 pt-4">
+                <div className="bg-asanti-green-light rounded-2xl p-5 flex flex-col items-center text-center">
+                  <Image
+                    src="/handshake.png"
+                    alt="Partnership"
+                    width={48}
+                    height={48}
+                    className="mb-3"
+                  />
+                  <p className="text-sm font-semibold text-gray-800">
+                    Trusted Partners
+                  </p>
+                </div>
+                <div className="bg-asanti-green-light rounded-2xl p-5 flex flex-col items-center text-center">
+                  <Image
+                    src="/africa.png"
+                    alt="West Africa"
+                    width={48}
+                    height={48}
+                    className="mb-3"
+                  />
+                  <p className="text-sm font-semibold text-gray-800">
+                    West Africa
+                  </p>
+                </div>
+                <div className="bg-asanti-green-light rounded-2xl p-5 flex flex-col items-center text-center">
+                  <Image
+                    src="/NIC_LOGO.png"
+                    alt="NIC Registered"
+                    width={48}
+                    height={48}
+                    className="mb-3"
+                  />
+                  <p className="text-sm font-semibold text-gray-800">
+                    NIC Registered
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -213,44 +218,29 @@ export default function AboutPage() {
             {[
               {
                 name: "Mark Ofori Boateng",
-                initials: "MO",
                 role: "Managing Director",
                 bio: "With over 15 years in insurance and risk management, Mark leads Asanti Brokers with a vision to make insurance accessible to every Ghanaian.",
-                color: "bg-asanti-green",
               },
               {
                 name: "Debora Baidoo",
-                initials: "DB",
                 role: "Head of Operations",
                 bio: "Debora ensures smooth day-to-day operations and oversees our claims management process, delivering exceptional service to every client.",
-                color: "bg-asanti-forest",
               },
               {
                 name: "Kwesi Appiah",
-                initials: "KA",
                 role: "Senior Insurance Advisor",
                 bio: "Kwesi specializes in commercial and business insurance, helping enterprises find the right coverage for their unique risks.",
-                color: "bg-asanti-green-dark",
               },
               {
                 name: "Henrietta Botchway",
-                initials: "HB",
                 role: "Client Relations Manager",
                 bio: "Henrietta is the first point of contact for new clients, guiding them through the insurance selection process with care and expertise.",
-                color: "bg-asanti-green",
               },
             ].map((member) => (
               <div
                 key={member.name}
                 className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100 text-center"
               >
-                <div
-                  className={`w-20 h-20 ${member.color} rounded-full flex items-center justify-center mx-auto mb-5`}
-                >
-                  <span className="text-white text-xl font-bold">
-                    {member.initials}
-                  </span>
-                </div>
                 <h3 className="text-lg font-bold text-gray-900 mb-1">
                   {member.name}
                 </h3>
