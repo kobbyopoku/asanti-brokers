@@ -219,10 +219,10 @@ export default function AboutPage() {
                 color: "bg-asanti-green",
               },
               {
-                name: "Sophia Mensah",
-                initials: "SM",
+                name: "Debora Baidoo",
+                initials: "DB",
                 role: "Head of Operations",
-                bio: "Sophia ensures smooth day-to-day operations and oversees our claims management process, delivering exceptional service to every client.",
+                bio: "Debora ensures smooth day-to-day operations and oversees our claims management process, delivering exceptional service to every client.",
                 color: "bg-asanti-forest",
               },
               {
@@ -233,10 +233,10 @@ export default function AboutPage() {
                 color: "bg-asanti-green-dark",
               },
               {
-                name: "Ama Darko",
-                initials: "AD",
+                name: "Henrietta Botchway",
+                initials: "HB",
                 role: "Client Relations Manager",
-                bio: "Ama is the first point of contact for new clients, guiding them through the insurance selection process with care and expertise.",
+                bio: "Henrietta is the first point of contact for new clients, guiding them through the insurance selection process with care and expertise.",
                 color: "bg-asanti-green",
               },
             ].map((member) => (
