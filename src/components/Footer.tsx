@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 export default function Footer() {
   return (
@@ -7,13 +8,15 @@ export default function Footer() {
         <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
           {/* Brand */}
           <div className="lg:col-span-1">
-            <Image
-              src="/Logo.png"
-              alt="Asanti Brokers"
-              width={140}
-              height={40}
-              className="h-8 w-auto mb-4"
-            />
+            <Link href="/">
+              <Image
+                src="/Logo.png"
+                alt="Asanti Brokers"
+                width={140}
+                height={40}
+                className="h-8 w-auto mb-4"
+              />
+            </Link>
             <p className="text-gray-400 text-sm leading-relaxed mb-6">
               Licensed insurance broker making coverage accessible, affordable,
               and hassle-free for every Ghanaian.
@@ -26,7 +29,9 @@ export default function Footer() {
                 height={32}
                 className="h-8 w-8 rounded-full"
               />
-              <span className="text-xs text-gray-400">NIC Registered Broker</span>
+              <span className="text-xs text-gray-400">
+                NIC Registered Broker
+              </span>
             </div>
           </div>
 
@@ -35,19 +40,19 @@ export default function Footer() {
             <h4 className="font-semibold mb-4 text-sm">Quick Links</h4>
             <ul className="space-y-3">
               {[
-                { label: "Home", href: "#home" },
-                { label: "About Us", href: "#about" },
-                { label: "Services", href: "#services" },
-                { label: "How It Works", href: "#how-it-works" },
-                { label: "Contact", href: "#contact" },
+                { label: "Home", href: "/" },
+                { label: "About Us", href: "/about" },
+                { label: "Services", href: "/services" },
+                { label: "How It Works", href: "/how-it-works" },
+                { label: "Contact", href: "/contact" },
               ].map((link) => (
                 <li key={link.href}>
-                  <a
+                  <Link
                     href={link.href}
                     className="text-sm text-gray-400 hover:text-asanti-green transition-colors"
                   >
                     {link.label}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -66,12 +71,12 @@ export default function Footer() {
                 "Claims Assistance",
               ].map((service) => (
                 <li key={service}>
-                  <a
-                    href="#services"
+                  <Link
+                    href="/services"
                     className="text-sm text-gray-400 hover:text-asanti-green transition-colors"
                   >
                     {service}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>
@@ -87,12 +92,18 @@ export default function Footer() {
                 Head Office Building, Osu, Accra
               </li>
               <li>
-                <a href="tel:+233277426580" className="hover:text-asanti-green">
+                <a
+                  href="tel:+233277426580"
+                  className="hover:text-asanti-green"
+                >
                   0277 426 580
                 </a>
               </li>
               <li>
-                <a href="tel:+233289538285" className="hover:text-asanti-green">
+                <a
+                  href="tel:+233289538285"
+                  className="hover:text-asanti-green"
+                >
                   0289 538 285
                 </a>
               </li>
@@ -117,12 +128,12 @@ export default function Footer() {
             reserved.
           </p>
           <div className="flex items-center gap-6 text-xs text-gray-500">
-            <a href="#" className="hover:text-gray-300">
+            <Link href="#" className="hover:text-gray-300">
               Privacy Policy
-            </a>
-            <a href="#" className="hover:text-gray-300">
+            </Link>
+            <Link href="#" className="hover:text-gray-300">
               Terms of Service
-            </a>
+            </Link>
           </div>
         </div>
       </div>

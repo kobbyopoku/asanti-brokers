@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Analytics } from "@vercel/analytics/next";
+import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 import "./globals.css";
 
 const inter = Inter({
@@ -9,7 +11,10 @@ const inter = Inter({
 });
 
 export const metadata: Metadata = {
-  title: "Asanti Brokers Limited | Insurance Made Simple",
+  title: {
+    default: "Asanti Brokers Limited | Insurance Made Simple",
+    template: "%s | Asanti Brokers",
+  },
   description:
     "Asanti Brokers Limited is a licensed insurance broker in Ghana. Get motor insurance, property insurance, and more — fast, digital, and hassle-free.",
   keywords: [
@@ -43,7 +48,9 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={`${inter.variable} antialiased`}>
-        {children}
+        <Navbar />
+        <main className="min-h-screen">{children}</main>
+        <Footer />
         <Analytics />
       </body>
     </html>
