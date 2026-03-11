@@ -104,6 +104,14 @@ export default function ContactPage() {
                       +233 20 196 1648
                     </a>
                   </p>
+                  <p className="text-sm text-gray-600">
+                    <a
+                      href="tel:+233242270499"
+                      className="hover:text-asanti-green transition-colors"
+                    >
+                      +233 24 227 0499
+                    </a>
+                  </p>
                 </div>
               </div>
 
