@@ -35,7 +35,7 @@ export const metadata: Metadata = {
     title: "Asanti Brokers Limited | Insurance Made Simple",
     description:
       "Licensed insurance broker in Ghana. Get covered in minutes.",
-    url: "https://www.asanti.io",
+    url: "https://www.asanti.insure",
     siteName: "Asanti Brokers",
     images: [{ url: "/asanti-requirements-thumbnail.jpg" }],
     type: "website",

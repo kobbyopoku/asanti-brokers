@@ -136,10 +136,10 @@ export default function ContactPage() {
                   <p className="font-semibold text-gray-900">Email</p>
                   <p className="text-sm text-gray-600 mt-1">
                     <a
-                      href="mailto:hello@asanti.io"
+                      href="mailto:hello@asanti.insure"
                       className="hover:text-asanti-green transition-colors"
                     >
-                      hello@asanti.io
+                      hello@asanti.insure
                     </a>
                   </p>
                 </div>

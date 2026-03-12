@@ -111,10 +111,10 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="mailto:hello@asanti.io"
+                  href="mailto:hello@asanti.insure"
                   className="hover:text-asanti-green"
                 >
-                  hello@asanti.io
+                  hello@asanti.insure
                 </a>
               </li>
             </ul>
