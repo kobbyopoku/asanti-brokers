@@ -103,10 +103,10 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="tel:+233201961648"
+                  href="tel:+233242270499"
                   className="hover:text-asanti-green"
                 >
-                  0201 961 648
+                  0242 270 499
                 </a>
               </li>
               <li>
